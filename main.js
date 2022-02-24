@@ -42,7 +42,7 @@ async function submit(e) {
   try {
     const options = {
       method: "POST",
-      redirect: "follow",
+      mode: "no-cors",
       headers: {
         "Content-Type": "application/json",
       },
@@ -50,7 +50,7 @@ async function submit(e) {
     };
     const response = await fetch(API, options);
     console.log(response.json());
-    // window.location.assign("/message");
+    window.location.assign("/message.html");
   } catch (error) {
     // handle failed form submission
     console.log(error);
