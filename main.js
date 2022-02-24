@@ -42,7 +42,7 @@ async function submit(e) {
   try {
     const options = {
       method: "POST",
-      mode: "no-cors",
+      redirect: "follow",
       headers: {
         "Content-Type": "application/json",
       },
