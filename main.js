@@ -49,7 +49,8 @@ async function submit(e) {
       body: JSON.stringify(payload),
     };
     const response = await fetch(API, options);
-    window.location.replace("/message.html");
+    console.log(response.json());
+    // window.location.replace("message.html");
   } catch (error) {
     // handle failed form submission
     console.log(error);
