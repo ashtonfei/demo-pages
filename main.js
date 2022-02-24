@@ -42,7 +42,7 @@ async function submit(e) {
   try {
     const options = {
       method: "POST",
-      // mode: "no-cors",
+      mode: "no-cors",
       headers: {
         "Content-Type": "application/json",
       },
