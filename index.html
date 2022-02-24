@@ -4,28 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navis Quote App</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        width: 100vw;
-        height: 100vh;
-      }
-      iframe {
-        border: none;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <title>Custom Form with File Uploaders</title>
   </head>
   <body>
-    <iframe
-      src="https://script.google.com/macros/s/AKfycbzcBh9S4MYdY-n2BZ2Nb0GDoEgCaPlEQoiLtGCPD10zqyzPhIEhG7FzaH_dJyCWTk-S/exec"
-      frameborder="0"
-    ></iframe>
+    <form>
+      <!-- Form title -->
+      <div>
+        <h1>Custom Form with File Uploaders</h1>
+      </div>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="Australia">Australia</option>
+          <option value="China">China</option>
+          <option value="Japan">Japan</option>
+          <option value="South Korea">South Korea</option>
+          <option value="Thailand">Thailand</option>
+          <option value="France">France</option>
+          <option value="Denmark">Denmark</option>
+        </select>
+      </div>
+      <div>
+        <label for="fileOne">File One</label>
+        <input type="file" id="fileOne" name="fileOne" />
+      </div>
+      <div>
+        <label for="fileTwo">File Two</label>
+        <input type="file" id="fileTwo" name="fileTwo" />
+      </div>
+      <div>
+        <label for="fileThree">File Three</label>
+        <input type="file" id="fileThree" name="fileThree" />
+      </div>
+
+      <div>
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <pre id="message"></pre>
+    <script src="main.js"></script>
   </body>
 </html>
