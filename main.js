@@ -50,7 +50,7 @@ async function submit(e) {
     };
     const response = await fetch(API, options);
     console.log(response.json());
-    // window.location.replace("message.html");
+    window.location.assign("/message");
   } catch (error) {
     // handle failed form submission
     console.log(error);
